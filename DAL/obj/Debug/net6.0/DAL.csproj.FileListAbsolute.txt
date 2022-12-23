@@ -1,0 +1,15 @@
+F:\window\LibraryManangement\DAL\bin\Debug\net6.0\DAL.deps.json
+F:\window\LibraryManangement\DAL\bin\Debug\net6.0\DAL.dll
+F:\window\LibraryManangement\DAL\bin\Debug\net6.0\DAL.pdb
+F:\window\LibraryManangement\DAL\bin\Debug\net6.0\DTO.dll
+F:\window\LibraryManangement\DAL\bin\Debug\net6.0\DTO.pdb
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\DAL.csproj.CopyComplete
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\DAL.dll
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\refint\DAL.dll
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\DAL.pdb
+F:\window\LibraryManangement\DAL\obj\Debug\net6.0\ref\DAL.dll

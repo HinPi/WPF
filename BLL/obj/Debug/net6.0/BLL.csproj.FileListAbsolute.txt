@@ -1,0 +1,17 @@
+F:\window\LibraryManangement\BLL\bin\Debug\net6.0\BLL.deps.json
+F:\window\LibraryManangement\BLL\bin\Debug\net6.0\BLL.dll
+F:\window\LibraryManangement\BLL\bin\Debug\net6.0\BLL.pdb
+F:\window\LibraryManangement\BLL\bin\Debug\net6.0\DAL.dll
+F:\window\LibraryManangement\BLL\bin\Debug\net6.0\DTO.dll
+F:\window\LibraryManangement\BLL\bin\Debug\net6.0\DAL.pdb
+F:\window\LibraryManangement\BLL\bin\Debug\net6.0\DTO.pdb
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\BLL.csproj.AssemblyReference.cache
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\BLL.AssemblyInfoInputs.cache
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\BLL.AssemblyInfo.cs
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\BLL.csproj.CoreCompileInputs.cache
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\BLL.dll
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\refint\BLL.dll
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\BLL.pdb
+F:\window\LibraryManangement\BLL\obj\Debug\net6.0\ref\BLL.dll
