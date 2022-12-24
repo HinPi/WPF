@@ -28,6 +28,7 @@ namespace Library_Management
                         MessageBox.Show("Logged in successfully...");
                         UserHome userHome = new UserHome();
                         userHome.Show();
+                        this.Close();
                         tbUserEmail.Clear();
                         tbUserPass.Clear();
                     }

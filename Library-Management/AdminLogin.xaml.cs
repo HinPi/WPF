@@ -27,6 +27,7 @@ namespace Library_Management
                         MessageBox.Show("Logged in successfully...");
                         AdminHome adminHome = new AdminHome();
                         adminHome.Show();
+                        this.Close();
                         tbAdminEmail.Clear();
                         tbAdminPass.Clear();
                     }

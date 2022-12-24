@@ -67,9 +67,9 @@ namespace Library_Management
                     }
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Some unknown exception is occured!!!, Try again..");
+                MessageBox.Show(ex.Message);
             }
         }
     }

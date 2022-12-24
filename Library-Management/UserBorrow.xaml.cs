@@ -43,9 +43,9 @@ namespace Library_Management
                 }
                 dgBorrow.ItemsSource = lst;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Some unknown exception is occured!!!, Try again..");
+                MessageBox.Show(ex.Message);
             }
 
         }
@@ -84,9 +84,9 @@ namespace Library_Management
                     MessageBox.Show("Select a book to request...");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Some unknown exception is occured!!!, Try again..");
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -17,7 +17,7 @@ namespace DAL
         public DataSet GetAllRequestUserDAL(int userId)
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
-            MySqlDataAdapter da = new MySqlDataAdapter($"select bookid, bookname, daterecieved from requestedusers where iduser={userId}", conn);
+            MySqlDataAdapter da = new MySqlDataAdapter($"select bookid, bookname, daterequested from requestedusers where userid={userId}", conn);
             DataSet ds = new DataSet("usersrequests");
             da.Fill(ds);
             return ds;
@@ -27,7 +27,7 @@ namespace DAL
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
             MySqlCommand cmd = new MySqlCommand(
-                "insert into requestedusers(bookid, bookname, date, userid, username) value(@bookid, @bookname, @date, @userid, @username)",
+                "insert into requestedusers(bookid, bookname, daterequested, userid, username) value(@bookid, @bookname, @date, @userid, @username)",
                 conn);
             cmd.Parameters.Add(new MySqlParameter("@bookid", bookId));
             cmd.Parameters.Add(new MySqlParameter("@bookname", bookName));
@@ -52,7 +52,7 @@ namespace DAL
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
             MySqlCommand cmd = new MySqlCommand(
-                "delete top(1) from requestedusers where bookid=@bookid and userid=@userid",
+                "delete from requestedusers where bookid=@bookid and userid=@userid LIMIT 1",
                 conn);
             cmd.Parameters.Add(new MySqlParameter("@bookid", bookId));
             cmd.Parameters.Add(new MySqlParameter("@userid", userId));

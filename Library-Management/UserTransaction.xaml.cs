@@ -52,9 +52,9 @@ namespace Library_Management
                 }
                 dgReturn.ItemsSource = lstReceived;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Some unknown exception is occured!!!, Try again..");
+                MessageBox.Show(ex.Message);
             }
         }
         //RETURN RECIEVED BOOK FROM RECIEVED BOOK TABLE
@@ -86,9 +86,9 @@ namespace Library_Management
                     MessageBox.Show("Select a book properly...");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                MessageBox.Show("Some unknown exception is occured!!!, Try again..");
+                MessageBox.Show(ex.Message);
             }
         }
     }

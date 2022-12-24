@@ -27,7 +27,7 @@ namespace DAL
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
             MySqlCommand cmd = new MySqlCommand(
-                "insert into returnedusers(bookid, bookname, date, userid, username) value(@bookid, @bookname, @date, @userid, @username)",
+                "insert into returnedusers(bookid, bookname, datereturned, userid, username) value(@bookid, @bookname, @date, @userid, @username)",
                 conn);
             cmd.Parameters.Add(new MySqlParameter("@bookid", bookId));
             cmd.Parameters.Add(new MySqlParameter("@bookname", bookName));
@@ -52,7 +52,7 @@ namespace DAL
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
             MySqlCommand cmd = new MySqlCommand(
-                "delete top(1) from returnedusers where bookid=@bookid and userid=@userid",
+                "delete from returnedusers where bookid=@bookid and userid=@userid limit 1",
                 conn);
             cmd.Parameters.Add(new MySqlParameter("@bookid", bookId));
             cmd.Parameters.Add(new MySqlParameter("@userid", userId));

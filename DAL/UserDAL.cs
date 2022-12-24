@@ -18,7 +18,7 @@ namespace DAL
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
             MySqlCommand cmd = new MySqlCommand(
-                "select count (*) from users where useremail=@email",
+                "select count(*) from users where useremail=@email",
                 conn);
             cmd.Parameters.Add(new MySqlParameter("@email", userEmail));
             conn.Open();
@@ -105,7 +105,7 @@ namespace DAL
         {
             MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
             MySqlCommand cmd = new MySqlCommand(
-                "select usernames from users where userid=@id",
+                "select username from users where userid=@id",
                 conn);
             cmd.Parameters.Add(new MySqlParameter("@id", userId));
 
@@ -122,7 +122,7 @@ namespace DAL
             {
                 MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
                 MySqlCommand cmd = new MySqlCommand(
-                    "select iduser from users where useremail=@email and userpass=@pass",
+                    "select userid from users where useremail=@email and userpass=@pass",
                     conn);
                 cmd.Parameters.Add(new MySqlParameter("@email", userEmail));
                 cmd.Parameters.Add(new MySqlParameter("@pass", userPass));

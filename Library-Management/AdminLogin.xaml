@@ -8,17 +8,21 @@
         WindowStyle="ToolWindow" ResizeMode="NoResize"
         Title="Admin Login" Height="400" Width="342">
     <Grid>
-        <Rectangle Fill="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" HorizontalAlignment="Left" Height="294" Margin="30,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="274" Opacity="0.7"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" HorizontalAlignment="Left" Height="294" Margin="30,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="274" Opacity="0.7" Grid.ColumnSpan="2"/>
 
-        <Label Content="    Admin Login" Margin="92,70,88,0" VerticalAlignment="Top" Height="42" Width="156" FontSize="18" HorizontalAlignment="Center"/>
-        <StackPanel HorizontalAlignment="Left" Height="120" Margin="66,137,0,0" VerticalAlignment="Top" Width="204">
+        <Label Content="    Admin Login" Margin="95,70,0,0" VerticalAlignment="Top" Height="42" Width="156" FontSize="18" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
+        <StackPanel HorizontalAlignment="Left" Height="120" Margin="66,137,0,0" VerticalAlignment="Top" Width="204" Grid.ColumnSpan="2">
             <Label Content="Email" Height="32"/>
             <TextBox Height="20" TextWrapping="Wrap" Name="tbAdminEmail"/>
             <Label Content="Password" Height="32" />
             <TextBox Height="20" TextWrapping="Wrap" Name="tbAdminPass"/>
         </StackPanel>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="130,262,0,0" VerticalAlignment="Top" Width="74" Name="BtnLogin" Click="BtnLogin_Click"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="66,308,0,0" VerticalAlignment="Top" Width="204" Name="alertAdmin" Foreground="Red"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="28,262,0,0" VerticalAlignment="Top" Width="74" Name="BtnLogin" Click="BtnLogin_Click" Grid.Column="1"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="66,308,0,0" VerticalAlignment="Top" Width="204" Name="alertAdmin" Foreground="Red" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

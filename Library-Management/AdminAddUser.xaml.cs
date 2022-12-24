@@ -35,9 +35,9 @@ namespace Library_Management
                 {
                     MessageBox.Show("Invalid Admission number!!!,\nIt should not be a string, Try again..");
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Some unknown exception is occured!!!, Try again..");
+                    MessageBox.Show(ex.Message);
                 }
             }
             else

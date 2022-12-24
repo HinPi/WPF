@@ -73,10 +73,7 @@ namespace Library_Management
                     MessageBox.Show("Select book properly...");
                 }
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Some unknown exception is occured!!!, Try again..");
-            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
         private void BtnReject_Click(object sender, RoutedEventArgs e)
         {
