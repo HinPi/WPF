@@ -46,5 +46,10 @@ namespace Library_Management
             }
 
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Random rand = new Random();
+            tbUAdNo.Text = rand.Next().ToString();
+        }
     }
 }

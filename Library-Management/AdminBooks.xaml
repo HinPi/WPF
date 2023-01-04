@@ -15,7 +15,7 @@
                     <DataGridTextColumn Header="Book Author" Binding="{Binding BookAuthor}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Book ISBN" Binding="{Binding BookISBN}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Book Price" Binding="{Binding BookPrice}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Book Copies" Binding="{Binding BookCopies}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Quantity" Binding="{Binding BookCopies}"></DataGridTextColumn>
                     <DataGridTemplateColumn Header="Actions">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>

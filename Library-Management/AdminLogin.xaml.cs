@@ -15,12 +15,12 @@ namespace Library_Management
         }
         private void BtnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if ((tbAdminEmail.Text != string.Empty || tbAdminPass.Text != string.Empty) || (tbAdminEmail.Text != string.Empty && tbAdminPass.Text != string.Empty))
+            if ((tbAdminEmail.Text != string.Empty || tbAdminPass.Password != string.Empty) || (tbAdminEmail.Text != string.Empty && tbAdminPass.Password != string.Empty))
             {
                 try
                 {
                     AdminBL adminBl = new AdminBL();
-                    bool isDone = adminBl.AdminLoginBL(tbAdminEmail.Text, tbAdminPass.Text);
+                    bool isDone = adminBl.AdminLoginBL(tbAdminEmail.Text, tbAdminPass.Password);
                     if (isDone)
                     {
                         alertAdmin.Content = "";
@@ -35,8 +35,6 @@ namespace Library_Management
                     {
 
                         alertAdmin.Content = "Invalid email id or password...";
-                        tbAdminEmail.Clear();
-                        tbAdminPass.Clear();
                     }
                 }
                 catch (Exception ex)

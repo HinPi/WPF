@@ -18,7 +18,7 @@
         <TextBox HorizontalAlignment="Left" Height="23" Margin="31,166,0,0" TextWrapping="Wrap" Text="" x:Name="tbBISBN"  VerticalAlignment="Top" Width="262"/>
         <Label Content="Book Price" HorizontalAlignment="Left" Margin="31,191,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="31,222,0,0" TextWrapping="Wrap" Text="" x:Name="tbBPrice" VerticalAlignment="Top" Width="262"/>
-        <Label Content="Book Copies" HorizontalAlignment="Left" Margin="31,247,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
+        <Label Content="Quantity" HorizontalAlignment="Left" Margin="31,247,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="31,278,0,0" TextWrapping="Wrap" Text="" x:Name="tbBCopy" VerticalAlignment="Top" Width="262"/>
         <Button Content="Submit" HorizontalAlignment="Left" Height="26" Margin="31,321,0,0" x:Name="BtnSubmit" Click="BtnSubmit_Click" VerticalAlignment="Top" Width="75"/>
     </Grid>

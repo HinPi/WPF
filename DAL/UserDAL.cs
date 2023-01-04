@@ -60,6 +60,7 @@ namespace DAL
             MySqlCommand cmd = new MySqlCommand(
                 "update users set username=@name, useradno=@adno, useremail=@email, userpass=@pass where userid=@id",
                 conn);
+            cmd.Parameters.Add(new MySqlParameter("@id", userId));
             cmd.Parameters.Add(new MySqlParameter("@name", userName));
             cmd.Parameters.Add(new MySqlParameter("@adno", userAdNo));
             cmd.Parameters.Add(new MySqlParameter("@email", userEmail));

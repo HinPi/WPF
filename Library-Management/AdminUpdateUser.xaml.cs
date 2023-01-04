@@ -41,15 +41,21 @@ namespace Library_Management
                 {
                     MessageBox.Show("Invalid Admission number!!!,\nIt should not be a string, Try again..");
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Some unknown exception is occured!!!, Try again..");
+                    MessageBox.Show(ex.Message);
                 }
             }
             else
             {
                 MessageBox.Show("Enter the fields properly!!!, Every field is required..");
             }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Random rand = new Random();
+            tbUAdNo.Text = rand.Next().ToString();
         }
     }
 }

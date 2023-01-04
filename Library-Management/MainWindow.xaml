@@ -15,7 +15,7 @@
 
         <Button Content="User" HorizontalAlignment="Left" Margin="168,267,0,0" VerticalAlignment="Top" Width="74" x:Name="BtnUser" Click="BtnUser_Click"/>
         <Button Content="Admin" HorizontalAlignment="Left" Margin="465,267,0,0" VerticalAlignment="Top" Width="74" x:Name="BtnAdmin" Click="BtnAdmin_Click" RenderTransformOrigin="1.014,0.75"/>
-        <Label Content="Welcome to our system" Margin="0,41,0,0" FontWeight="Bold" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="#FFB9FFEF" Background="{x:Null}" FontFamily="Sweet Hipster"/>
+        <Label Content="Welcome to our system" Margin="0,41,0,0" FontWeight="Bold" FontSize="36" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="Black" Background="{x:Null}" FontFamily="Sweet Hipster"/>
 
     </Grid>
 </Window>

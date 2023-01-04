@@ -19,7 +19,7 @@
             <Label Content="Email" Height="32"/>
             <TextBox Height="20" TextWrapping="Wrap" Name="tbAdminEmail"/>
             <Label Content="Password" Height="32" />
-            <TextBox Height="20" TextWrapping="Wrap" Name="tbAdminPass"/>
+            <PasswordBox Height="20" Name="tbAdminPass" />
         </StackPanel>
         <Button Content="Login" HorizontalAlignment="Left" Margin="28,262,0,0" VerticalAlignment="Top" Width="74" Name="BtnLogin" Click="BtnLogin_Click" Grid.Column="1"/>
         <Label Content="" HorizontalAlignment="Left" Margin="66,308,0,0" VerticalAlignment="Top" Width="204" Name="alertAdmin" Foreground="Red" Grid.ColumnSpan="2"/>
