@@ -3,22 +3,40 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:Library_Management"
         mc:Ignorable="d"
-        WindowStyle="ToolWindow" ResizeMode="NoResize"
-        Title="Admin Login" Height="400" Width="342">
+        WindowStyle="SingleBorderWindow" ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        Title="Admin Login" Height="450" Width="350">
     <Grid>
-        <Rectangle Fill="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" HorizontalAlignment="Left" Height="294" Margin="30,40,0,0" Stroke="Black" VerticalAlignment="Top" Width="274" Opacity="0.7"/>
-
-        <Label Content="    Admin Login" Margin="92,70,88,0" VerticalAlignment="Top" Height="42" Width="156" FontSize="18" HorizontalAlignment="Center"/>
-        <StackPanel HorizontalAlignment="Left" Height="120" Margin="66,137,0,0" VerticalAlignment="Top" Width="204">
-            <Label Content="Email" Height="32"/>
-            <TextBox Height="20" TextWrapping="Wrap" Name="tbAdminEmail"/>
-            <Label Content="Password" Height="32" />
-            <TextBox Height="20" TextWrapping="Wrap" Name="tbAdminPass"/>
+        <StackPanel Width="300" Margin="25,26,25,323" RenderTransformOrigin="0.484,0.508">
+            <Label Content="LOGIN" FontWeight="Bold" FontSize="20" HorizontalAlignment="Left" Foreground="#DD1F0EEC" Width="100" Height="37"/>
+            <Label Content="Wellcome Back !" FontWeight="Black" FontSize="14" HorizontalAlignment="Left" Height="35" ScrollViewer.VerticalScrollBarVisibility="Disabled" HorizontalContentAlignment="Center" />
         </StackPanel>
-        <Button Content="Login" HorizontalAlignment="Left" Margin="130,262,0,0" VerticalAlignment="Top" Width="74" Name="BtnLogin" Click="BtnLogin_Click"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="66,308,0,0" VerticalAlignment="Top" Width="204" Name="alertAdmin" Foreground="Red"/>
+
+        <StackPanel HorizontalAlignment="Center" Height="202" VerticalAlignment="Top" Width="300" Margin="0,111,0,0">
+            <Label Style="{DynamicResource MaterialDesignLabel}" FontWeight="Bold" Content="Email" Height="32"/>
+            <StackPanel Orientation="Horizontal" Width="300" >
+                <materialDesign:PackIcon Kind="User" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,5,0"/>
+                <TextBox Height="30" Style="{DynamicResource MaterialDesignTextBox}" TextWrapping="Wrap" x:Name="tbAdminEmail" Width="275"/>
+            </StackPanel>
+            <Label Style="{DynamicResource MaterialDesignLabel}" FontWeight="Bold" Content="Password" Height="32" />
+            <StackPanel Orientation="Horizontal" Width="300" >
+                <materialDesign:PackIcon Kind="Password" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,5,0"/>
+                <PasswordBox Height="30" Style="{DynamicResource MaterialDesignPasswordBox}" x:Name="tbAdminPass" HorizontalAlignment="Right" Width="275"/>
+            </StackPanel>
+            <Label Style="{DynamicResource MaterialDesignLabel}" FontWeight="Bold" Content="Role" Height="32" />
+            <StackPanel Orientation="Horizontal" Width="300" >
+                <materialDesign:PackIcon Kind="AccountEye" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,5,0"/>
+                <ComboBox Name="cbRole" Height="30" Width="275" Style="{DynamicResource MaterialDesignComboBox}" Padding="9,4,0,4" HorizontalContentAlignment="Stretch">
+                    <ComboBoxItem IsSelected="True">Admin</ComboBoxItem>
+                    <ComboBoxItem >User</ComboBoxItem>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <Button Content="Login" HorizontalAlignment="Center" Margin="0,356,0,0" VerticalAlignment="Top" Width="300" Name="BtnLogin" Click="BtnLogin_Click"/>
+        <Label Content="" HorizontalAlignment="Center" Margin="0,325,0,0" VerticalAlignment="Top" Width="300" Name="alertAdmin" Foreground="Red"/>
 
     </Grid>
 </Window>

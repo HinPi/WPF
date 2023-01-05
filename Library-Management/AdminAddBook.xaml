@@ -3,23 +3,23 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:Library_Management"
         mc:Ignorable="d"
-        WindowStyle="ToolWindow" ResizeMode="NoResize"
-        Title="Add Book" Height="409" Width="333" Foreground="{x:Null}">
-    <Grid Height="383" VerticalAlignment="Top" Margin="0,0,0,-4">
+        WindowStyle="SingleBorderWindow" ResizeMode="CanMinimize"
+        Title="Add Book" Height="445" Width="406" Foreground="{x:Null}">
+    <Grid Height="435" VerticalAlignment="Top">
 
-        <Rectangle HorizontalAlignment="Left" Height="334" Margin="20,22,0,0" Stroke="Black" VerticalAlignment="Top" Width="286" Opacity="0.705" Fill="{DynamicResource {x:Static SystemColors.ScrollBarBrushKey}}"/>
-        <Label Content="Book Name" HorizontalAlignment="Left" Margin="31,22,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" Height="26"/>
-        <Label Content="Book Author" HorizontalAlignment="Left" Margin="31,79,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="31,54,0,0" TextWrapping="Wrap" Text="" x:Name="tbBName" VerticalAlignment="Top" Width="262"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="31,110,0,0" TextWrapping="Wrap" Text="" x:Name="tbBAuthor" VerticalAlignment="Top" Width="262"/>
-        <Label Content="Book ISBN" HorizontalAlignment="Left" Margin="31,135,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="31,166,0,0" TextWrapping="Wrap" Text="" x:Name="tbBISBN"  VerticalAlignment="Top" Width="262"/>
-        <Label Content="Book Price" HorizontalAlignment="Left" Margin="31,191,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="31,222,0,0" TextWrapping="Wrap" Text="" x:Name="tbBPrice" VerticalAlignment="Top" Width="262"/>
-        <Label Content="Book Copies" HorizontalAlignment="Left" Margin="31,247,0,0" VerticalAlignment="Top" Width="120" Height="26"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="31,278,0,0" TextWrapping="Wrap" Text="" x:Name="tbBCopy" VerticalAlignment="Top" Width="262"/>
-        <Button Content="Submit" HorizontalAlignment="Left" Height="26" Margin="31,321,0,0" x:Name="BtnSubmit" Click="BtnSubmit_Click" VerticalAlignment="Top" Width="75"/>
+        <TextBox HorizontalAlignment="Center"  Height="30" Margin="0,54,0,0" TextWrapping="Wrap" Text="" x:Name="tbBName" VerticalAlignment="Top" Foreground="Black" Width="340"/>
+        <Label Content="Book Name"  HorizontalAlignment="Left" Margin="31,22,0,0" VerticalAlignment="Top" Width="120" Background="{x:Null}" Height="26" FontWeight="Bold" FontSize="13"/>
+        <Label Content="Book Author" HorizontalAlignment="Left" Margin="31,86,0,0" VerticalAlignment="Top" Width="120" Height="26" FontWeight="Bold" FontSize="13"/>
+        <TextBox Foreground="Black" HorizontalAlignment="Center"  Height="30" Margin="0,117,0,0" TextWrapping="Wrap" Text="" x:Name="tbBAuthor" VerticalAlignment="Top" Width="340"/>
+        <Label Content="Book ISBN" HorizontalAlignment="Left" Margin="31,148,0,0" VerticalAlignment="Top" Width="120" Height="26" FontWeight="Bold" FontSize="13"/>
+        <TextBox Foreground="Black" HorizontalAlignment="Center" Height="30" TextWrapping="Wrap" Text="" x:Name="tbBISBN"  VerticalAlignment="Top" Width="340" Margin="0,179,0,0" />
+        <Label Content="Book Price" HorizontalAlignment="Left" Margin="31,211,0,0" VerticalAlignment="Top" Width="120" Height="26" FontWeight="Bold" FontSize="13"/>
+        <TextBox Foreground="Black" HorizontalAlignment="Center" Height="30" Margin="0,242,0,0" TextWrapping="Wrap" Text="" x:Name="tbBPrice" VerticalAlignment="Top" Width="340" />
+        <Label Content="Book Copies" HorizontalAlignment="Left" Margin="31,272,0,0" VerticalAlignment="Top" Width="120" Height="26" FontWeight="Bold" FontSize="13"/>
+        <TextBox Foreground="Black" HorizontalAlignment="Center" Height="30" Margin="0,303,0,0" TextWrapping="Wrap" Text="" x:Name="tbBCopy" VerticalAlignment="Top" Width="340" BorderBrush="#89421515"/>
+        <Button Content="Submit" HorizontalAlignment="Center" Height="30" Margin="0,362,0,43" x:Name="BtnSubmit" Click="BtnSubmit_Click" Width="340"/>
     </Grid>
 </Window>

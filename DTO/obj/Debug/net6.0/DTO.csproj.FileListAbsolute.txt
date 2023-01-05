@@ -10,3 +10,15 @@ F:\window\LibraryManangement\DTO\obj\Debug\net6.0\DTO.dll
 F:\window\LibraryManangement\DTO\obj\Debug\net6.0\refint\DTO.dll
 F:\window\LibraryManangement\DTO\obj\Debug\net6.0\DTO.pdb
 F:\window\LibraryManangement\DTO\obj\Debug\net6.0\ref\DTO.dll
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\bin\Debug\net6.0\DTO.deps.json
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\bin\Debug\net6.0\DTO.dll
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\bin\Debug\net6.0\DTO.pdb
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\DTO.csproj.AssemblyReference.cache
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\DTO.AssemblyInfoInputs.cache
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\DTO.AssemblyInfo.cs
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\DTO.csproj.CoreCompileInputs.cache
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\DTO.dll
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\refint\DTO.dll
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\DTO.pdb
+D:\Workspace\c_sharp\Project_Final\WPF\DTO\obj\Debug\net6.0\ref\DTO.dll

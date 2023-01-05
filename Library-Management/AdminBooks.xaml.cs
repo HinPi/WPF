@@ -11,7 +11,7 @@ namespace Library_Management
     /// <summary>
     /// Interaction logic for AdminBooks.xaml
     /// </summary>
-    public partial class AdminBooks : UserControl
+    public partial class AdminBooks : Page
     {
         public static Book updateBook = new Book();
 

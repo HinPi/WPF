@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\window\LibraryManangement\Library-Management\obj\Debug\net6.0-windows\
+D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\obj\Debug\net6.0-windows\
 Library_Management
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-F:\window\LibraryManangement\Library-Management\App.xaml
-16-108796323
+D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\App.xaml
+18-1586706130
 
-18-974833015
-204307865895
-AdminAccepted.xaml;AdminAddBook.xaml;AdminAddUser.xaml;AdminBooks.xaml;AdminHome.xaml;AdminLogin.xaml;AdminRequests.xaml;AdminReturn.xaml;AdminUpdateBook.xaml;AdminUpdateUser.xaml;AdminUsers.xaml;MainWindow.xaml;UserBorrow.xaml;UserHome.xaml;UserLogin.xaml;UserTransaction.xaml;
+20-1661045465
+206-709088322
+AdminAccepted.xaml;AdminAddBook.xaml;AdminAddUser.xaml;AdminBooks.xaml;AdminHome.xaml;AdminHomeReDesign.xaml;AdminLogin.xaml;AdminRequests.xaml;AdminReturn.xaml;AdminUpdateBook.xaml;AdminUpdateUser.xaml;AdminUsers.xaml;MainWindow.xaml;UserBorrow.xaml;UserHome.xaml;UserHomeReDesign.xaml;UserLogin.xaml;UserTransaction.xaml;
 
 False
 

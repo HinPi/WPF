@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library_Management"
              mc:Ignorable="d" 
-             d:DesignHeight="362" d:DesignWidth="655">
+             d:DesignHeight="480" d:DesignWidth="900">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="332" Margin="10,30,0,0" VerticalAlignment="Top" Width="277" Name="requestStackPanel">
-            <DataGrid IsReadOnly="True" Height="332" Name="dgRequest" AutoGenerateColumns="False" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+        <StackPanel HorizontalAlignment="Left" Height="444" Margin="10,30,0,0" VerticalAlignment="Top" Width="435" Name="requestStackPanel">
+            <DataGrid IsReadOnly="True" Height="444" Name="dgRequest" AutoGenerateColumns="False" Background="White" Width="409" Margin="10,0,0,0">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
                     <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
@@ -16,24 +16,24 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="332" Margin="298,30,0,0" VerticalAlignment="Top" Width="347" Name="returnStackPanel">
-            <DataGrid IsReadOnly="True" Height="332" Name="dgReturn" AutoGenerateColumns="False" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}">
+        <StackPanel HorizontalAlignment="Left" Height="443" Margin="450,30,0,0" VerticalAlignment="Top" Width="450" Name="returnStackPanel">
+            <DataGrid IsReadOnly="True" Height="446" x:Name="dgReturn" AutoGenerateColumns="False" Background="White" Margin="0,0,10,0">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Recieved Date" Binding="{Binding DateRecieved}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"/>
+                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"/>
+                    <DataGridTextColumn Header="Recieved Date" Binding="{Binding DateRecieved}"/>
                     <DataGridTemplateColumn Header="Actions">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
-                                <Button x:Name="BtnReturn" Content=" Return " Click="BtnReturn_Click"></Button>
+                                <Button x:Name="BtnReturn" Content=" Return " Click="BtnReturn_Click"/>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>
                     </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
-        <Label Content="Recieved Books" HorizontalAlignment="Left" Margin="375,-4,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20" Width="221"/>
-        <Label Content="Requested Books" HorizontalAlignment="Left" Margin="66,-4,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20" Width="221"/>
+        <Label Content="Recieved Books" HorizontalAlignment="Left" Margin="447,-4,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20" Width="221" FontWeight="Bold"/>
+        <Label Content="Requested Books" HorizontalAlignment="Left" Margin="30,-4,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20" Width="221" FontWeight="Bold"/>
 
     </Grid>
 </UserControl>

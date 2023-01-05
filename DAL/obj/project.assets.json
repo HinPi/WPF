@@ -909,19 +909,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ngois\\.nuget\\packages\\": {}
+    "C:\\Users\\oscar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\window\\LibraryManangement\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\Workspace\\c_sharp\\Project_Final\\WPF\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "F:\\window\\LibraryManangement\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\ngois\\.nuget\\packages\\",
-      "outputPath": "F:\\window\\LibraryManangement\\DAL\\obj\\",
+      "projectPath": "D:\\Workspace\\c_sharp\\Project_Final\\WPF\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\oscar\\.nuget\\packages\\",
+      "outputPath": "D:\\Workspace\\c_sharp\\Project_Final\\WPF\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ngois\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\oscar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -935,8 +935,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\window\\LibraryManangement\\DTO\\DTO.csproj": {
-              "projectPath": "F:\\window\\LibraryManangement\\DTO\\DTO.csproj"
+            "D:\\Workspace\\c_sharp\\Project_Final\\WPF\\DTO\\DTO.csproj": {
+              "projectPath": "D:\\Workspace\\c_sharp\\Project_Final\\WPF\\DTO\\DTO.csproj"
             }
           }
         }
@@ -972,7 +972,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

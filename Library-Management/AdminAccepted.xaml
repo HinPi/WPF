@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library_Management"
              mc:Ignorable="d" 
-             d:DesignHeight="362" d:DesignWidth="655">
+             d:DesignHeight="480" d:DesignWidth="900">
     <Grid>
-        <StackPanel HorizontalAlignment="Left" Height="332" VerticalAlignment="Top" Width="655" Margin="10,30,-10,0">
-            <DataGrid Height="333" Background="{DynamicResource {x:Static SystemColors.WindowFrameBrushKey}}" Margin="0,0,24,0" x:Name="dgAccepted" IsReadOnly="True" AutoGenerateColumns="False">
+        <StackPanel HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="890" Margin="0,20,0,0">
+            <DataGrid Height="442" Background="White" x:Name="dgAccepted" IsReadOnly="True" AutoGenerateColumns="False" Width="890">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="Date Recieved" Binding="{Binding DateRecieved}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="User Id" Binding="{Binding UserId}"></DataGridTextColumn>
-                    <DataGridTextColumn Header="User Name" Binding="{Binding UserName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Book Id" Binding="{Binding BookId}"/>
+                    <DataGridTextColumn Header="Book Name" Binding="{Binding BookName}"/>
+                    <DataGridTextColumn Header="Date Recieved" Binding="{Binding DateRecieved}"/>
+                    <DataGridTextColumn Header="User Id" Binding="{Binding UserId}"/>
+                    <DataGridTextColumn Header="User Name" Binding="{Binding UserName}"/>
                     <!--<DataGridTemplateColumn Header="Actions">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate>
@@ -25,7 +25,5 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
-        <Label Content="Accepted Section" HorizontalAlignment="Left" Margin="482,-6,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontFamily="NORTHEN" FontSize="20"/>
-
     </Grid>
 </UserControl>

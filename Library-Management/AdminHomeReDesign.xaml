@@ -1,0 +1,413 @@
+﻿<Window x:Class="Library_Management.AdminHomeReDesign"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:Library_Management"
+        mc:Ignorable="d"
+        Title="AdminHomeReDesign" Height="600" Width="1000" ResizeMode="CanMinimize">
+    <Window.Resources>
+        <Style TargetType="ToolTip" x:Key="tt_style">
+
+            <Setter Property="Placement" Value="Right"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="20,0,0,0"/>
+            <Setter Property="Background" Value="#4A5668"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Fonts/Roboto-Light.ttf #Roboto"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="PlacementRectangle" Value="60,0,0,0"/>
+            <Setter Property="HorizontalOffset" Value="15"/>
+            <Setter Property="VerticalOffset" Value="6"/>
+            <Setter Property="HasDropShadow" Value="True"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <!--// Background Color //-->
+        <Grid Background="#FFDADADA">
+            <!--// Navigation Panel //-->
+            <Grid x:Name="nav_pnl"
+                  HorizontalAlignment="Left"
+                  Width="62"
+                  Background="#FF487DC8" Panel.ZIndex="3">
+                <StackPanel x:Name="st_pnl">
+                    <!--//Menu button//-->
+                    <Grid Height="90">
+                        <TextBlock  Grid.Row="1"
+                                    Grid.Column="0"
+                                    Margin="73,-20,0,0"
+                                    Text="M E N U"
+                                    Foreground="White"
+                                    FontSize="20"
+                                    Background="Transparent"
+                                    HorizontalAlignment="Left"
+                                    VerticalAlignment="Center"
+                                    Style="{DynamicResource MaterialDesignHeadline6TextBlock}">
+                            <TextBlock.Effect>
+
+                                <DropShadowEffect  BlurRadius="10"
+                                                   ShadowDepth="1"
+                                                   Direction="-90"
+                                                   Color="White"/>
+
+                            </TextBlock.Effect>
+
+                        </TextBlock>
+
+                        <!--// Toggle Button //-->
+                        <ToggleButton x:Name="Tg_Btn"
+                                      Grid.Column="0"
+                                      VerticalAlignment="Center"
+                                      HorizontalAlignment="Left"
+                                      Margin="18,-20,0,0"
+                                      Height="25"
+                                      Width="25"
+                                      Style="{DynamicResource MaterialDesignHamburgerToggleButton}" Panel.ZIndex="10">
+                            <ToggleButton.Triggers>
+                                <!--// Event checked, unchecked //-->
+                                <EventTrigger RoutedEvent="ToggleButton.Unchecked">
+                                    <BeginStoryboard>
+                                        <Storyboard x:Name="HideStackPanel">
+                                            <DoubleAnimation    
+                                               
+                                                Storyboard.TargetName="nav_pnl"
+                                                Storyboard.TargetProperty="Width"
+                                                BeginTime="0:0:0"
+                                                From="230" To="65"
+                                                Duration="0:0:0.2">
+
+                                            </DoubleAnimation>
+
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </EventTrigger>
+
+                                <EventTrigger RoutedEvent="ToggleButton.Checked">
+                                    <BeginStoryboard>
+                                        <Storyboard x:Name="ShowStackPanel">
+                                            <DoubleAnimation
+                                                
+                                                Storyboard.TargetName="nav_pnl"
+                                                Storyboard.TargetProperty="Width"
+                                                BeginTime="0:0:0"
+                                                From="65" To="230"
+                                                Duration="0:0:0.3">
+
+                                            </DoubleAnimation>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+
+                                </EventTrigger>
+
+                            </ToggleButton.Triggers>
+
+
+                            <!--// Toggle button ddefault background img//-->
+                        </ToggleButton>
+                    </Grid>
+                    <!--// ListView with menu list items //-->
+                    <ListView  x:Name="LV"
+                               Background="Transparent"
+                               BorderBrush="Transparent"
+                               ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="LV_SelectionChanged" Panel.ZIndex="2">
+                        <!--// Home //-->
+                        <ListViewItem HorizontalAlignment="Left"
+                                      Name="Home"
+                                      Margin="0,0,0,0">
+                            <StackPanel Orientation="Horizontal"
+                                        Width="230">
+
+                                <materialDesign:PackIcon Kind="HomeOutline" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="25" Height="25"/>
+
+                                <TextBlock Text="Home"
+                                           Margin="25,0,0,0"
+                                           FontSize="18"
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>
+
+                            </StackPanel>
+                            <!--// Tool tip //-->
+                            <ListViewItem.ToolTip>
+                                <ToolTip x:Name="tt_home"
+                                         Content="Home"
+                                         Style="{DynamicResource tt_style}"/>
+
+                            </ListViewItem.ToolTip>
+                        </ListViewItem>
+
+                        <!--// Manage user //-->
+                        <ListViewItem HorizontalAlignment="Left"
+                                      Name="AdminUsers"
+                                      Margin="0,0,0,0" >
+
+                            <StackPanel Orientation="Horizontal"
+                                        Width="230">
+
+                                <materialDesign:PackIcon Kind="AccountDetailsOutline" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="25" Height="25"/>
+
+                                <TextBlock Text="Users"
+                                           Margin="25,0,0,0"
+                                           FontSize="18"
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>
+
+
+                            </StackPanel>
+
+                            <!--// Tooltip //-->
+
+                            <ListViewItem.ToolTip>
+
+                                <ToolTip x:Name="tt_users"
+                                         Content="Users"
+                                         Style="{StaticResource tt_style}"/>
+
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--// Books //-->
+                        <ListViewItem HorizontalAlignment="Left"
+                                      Name="AdminBooks"
+                                      Margin="0,0,0,0">
+
+                            <StackPanel Orientation="Horizontal"
+                                        Width="230">
+
+                                <materialDesign:PackIcon Kind="BookOutline" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="25" Height="25"/>
+
+                                <TextBlock Text="Books"
+                                           Margin="25,0,0,0"
+                                           FontSize="18"
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>
+                            </StackPanel>
+
+                            <!--// Tooltip //-->
+
+                            <ListViewItem.ToolTip>
+
+                                <ToolTip x:Name="tt_books"
+                                         Content="Books"
+                                         Style="{StaticResource tt_style}"/>
+
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--// History //-->
+                        <ListViewItem HorizontalAlignment="Left"
+                                      Name="Admin"
+                                      Margin="0,0,0,0">
+
+                            <StackPanel Orientation="Horizontal"
+                                        Width="230">
+
+                                <materialDesign:PackIcon Kind="BookClockOutline" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="25" Height="25"/>
+
+                                <TextBlock Text="History"
+                                           Margin="25,0,0,0"
+                                           FontSize="18"
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>
+
+                            </StackPanel>
+
+                            <!--// Tooltip //-->
+
+                            <ListViewItem.ToolTip>
+
+                                <ToolTip x:Name="tt_history"
+                                         Content="History"
+                                         Style="{StaticResource tt_style}"/>
+
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--// Books Requets //-->
+                        <ListViewItem HorizontalAlignment="Left"
+                                      Name="AdminRequests"
+                                      Margin="0,0,0,0">
+
+                            <StackPanel Orientation="Horizontal"
+                                        Width="230">
+
+                                <materialDesign:PackIcon Kind="BookArrowLeftOutline" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="25" Height="25"/>
+
+                                <TextBlock Text="Requests"
+                                           Margin="25,0,0,0"
+                                           FontSize="18"
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>
+                            </StackPanel>
+
+                            <!--// Tooltip //-->
+
+                            <ListViewItem.ToolTip>
+
+                                <ToolTip x:Name="tt_requests"
+                                         Content="Requests"
+                                         Style="{StaticResource tt_style}"/>
+
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--// Books Accepted //-->
+                        <ListViewItem HorizontalAlignment="Left"
+                                      Name="AdminAccepted"
+                                      Margin="0,0,0,0">
+
+                            <StackPanel Orientation="Horizontal"
+                                        Width="230">
+
+                                <materialDesign:PackIcon Kind="BookCheckOutline" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="25" Height="25"/>
+
+                                <TextBlock Text="Accepted"
+                                           Margin="25,0,0,0"
+                                           FontSize="18"
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>
+                            </StackPanel>
+
+                            <!--// Tooltip //-->
+
+                            <ListViewItem.ToolTip>
+
+                                <ToolTip x:Name="tt_accepted"
+                                         Content="Accepted"
+                                         Style="{StaticResource tt_style}"/>
+
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <!--// Books Return //-->
+                        <ListViewItem HorizontalAlignment="Left"
+                                      Name="AdminReturn"
+                                      Margin="0,0,0,0">
+
+                            <StackPanel Orientation="Horizontal"
+                                        Width="230">
+
+                                <materialDesign:PackIcon Kind="BookRefreshOutline" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="25" Height="25"/>
+
+                                <TextBlock Text="Return"
+                                           Margin="25,0,0,0"
+                                           FontSize="18"
+                                           Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>
+                            </StackPanel>
+
+                            <!--// Tooltip //-->
+
+                            <ListViewItem.ToolTip>
+
+                                <ToolTip x:Name="tt_return"
+                                         Content="Return"
+                                         Style="{StaticResource tt_style}"/>
+
+                            </ListViewItem.ToolTip>
+
+                        </ListViewItem>
+
+                        <ListView.ItemContainerStyle>
+
+                            <Style TargetType="ListViewItem">
+
+                                <Setter Property="Template">
+
+                                    <Setter.Value>
+
+                                        <ControlTemplate TargetType="{x:Type ListViewItem}">
+
+                                            <Border x:Name="Bd"
+                                                    Height="50"
+                                                    BorderBrush="{TemplateBinding BorderBrush}"
+                                                    BorderThickness="{TemplateBinding BorderThickness}"
+                                                    Background="{TemplateBinding Background}"
+                                                    Padding="{TemplateBinding Padding}"
+                                                    SnapsToDevicePixels="True">
+
+                                                <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+
+                                            </Border>
+
+
+
+
+                                            <ControlTemplate.Triggers>
+
+                                                <MultiTrigger>
+                                                    <MultiTrigger.Conditions>
+                                                        <Condition Property="IsMouseOver" Value="True"/>
+                                                    </MultiTrigger.Conditions>
+
+                                                    <Setter Property="Background"
+                                                            TargetName="Bd"
+                                                            Value="#404D5B"/>
+
+                                                    <Setter Property="BorderBrush"
+                                                            TargetName="Bd"
+                                                            Value="#404D5B"/>
+
+                                                </MultiTrigger>
+
+                                                <MultiTrigger>
+                                                    <MultiTrigger.Conditions>
+                                                        <Condition Property="IsSelected" Value="true" />
+                                                        <!--<Condition Property="Selector.IsSelectionActive" Value="true" />-->
+                                                    </MultiTrigger.Conditions>
+
+                                                    <Setter Property="Background"
+                                                            TargetName="Bd"
+                                                            Value="White"/>
+
+                                                    <Setter Property="BorderBrush"
+                                                            TargetName="Bd"
+                                                            Value="#FF5F85BB"/>
+
+                                                </MultiTrigger>
+
+                                            </ControlTemplate.Triggers>
+
+                                        </ControlTemplate>
+
+                                    </Setter.Value>
+
+                                </Setter>
+
+                            </Style>
+
+                        </ListView.ItemContainerStyle>
+                    </ListView>
+                </StackPanel>
+                <StackPanel VerticalAlignment="Bottom" Margin="10,0,0,10" Panel.ZIndex="2">
+                    <StackPanel Orientation="Horizontal"
+                                        Width="230" MouseLeftButtonDown="StackPanel_MouseLeftButtonDown" >
+
+                        <materialDesign:PackIcon Kind="Logout" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="25" Height="25"/>
+
+                        <TextBlock Text="Logout"
+                                   Margin="25,0,0,0"
+                                   FontSize="18"
+                                   Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>
+
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+
+            <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,30,0,0" Panel.ZIndex="1">
+                <TextBlock x:Name="tbTitle" FontSize="20" FontWeight="DemiBold" Style="{DynamicResource MaterialDesignHeadline2TextBlock}" Text="Home Page"/>
+            </Grid>
+            <Frame x:Name="frContent" Source="AdminBooks.xaml" NavigationUIVisibility="Hidden" HorizontalAlignment="Center" Width="900" Height="480" Margin="80,20,15,20" VerticalAlignment="Bottom" Panel.ZIndex="1">
+
+            </Frame>
+        </Grid>
+
+       
+
+    </Grid>
+</Window>

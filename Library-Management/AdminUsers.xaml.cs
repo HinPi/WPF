@@ -11,7 +11,7 @@ namespace Library_Management
     /// <summary>
     /// Interaction logic for AdminUsers.xaml
     /// </summary>
-    public partial class AdminUsers : UserControl
+    public partial class AdminUsers : Page
     {
         public static User updateUser = new User();
         public AdminUsers()
