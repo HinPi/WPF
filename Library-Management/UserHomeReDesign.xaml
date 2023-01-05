@@ -246,7 +246,7 @@
                 </StackPanel>
                 <StackPanel VerticalAlignment="Bottom" Margin="10,0,0,10" Panel.ZIndex="2">
                     <StackPanel Orientation="Horizontal"
-                                        Width="230" MouseRightButtonDown="StackPanel_MouseRightButtonDown">
+                                        Width="230" MouseLeftButtonDown="StackPanel_MouseLeftButtonDown">
 
                         <materialDesign:PackIcon Kind="Logout" Margin="10,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Stretch" Width="25" Height="25"/>
 

@@ -49,6 +49,13 @@ namespace BLL
             return ds;
         }
 
+        public DataSet SearchBookBL(string keyword)
+        {
+            BookDAL bookDal = new BookDAL();
+            DataSet ds = bookDal.SearchBookDAL(keyword);
+            return ds;
+        }
+
         public string AddBookBL(string bookName, string bookAuthor, string bookISBN, double bookPrice, int bookCopies)
         {
             string isBookValid = BookValidate(bookName, bookAuthor, bookISBN, bookPrice, bookCopies);

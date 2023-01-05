@@ -200,15 +200,15 @@
 
                         <!--// History //-->
                         <ListViewItem HorizontalAlignment="Left"
-                                      Name="Admin"
+                                      Name="AdminSearch"
                                       Margin="0,0,0,0">
 
                             <StackPanel Orientation="Horizontal"
                                         Width="230">
 
-                                <materialDesign:PackIcon Kind="BookClockOutline" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="25" Height="25"/>
+                                <materialDesign:PackIcon Kind="BookSearchOutline" Margin="10,0,0,0" HorizontalAlignment="Left" VerticalAlignment="Stretch" Width="25" Height="25"/>
 
-                                <TextBlock Text="History"
+                                <TextBlock Text="Search"
                                            Margin="25,0,0,0"
                                            FontSize="18"
                                            Style="{DynamicResource MaterialDesignHeadline6TextBlock}"/>

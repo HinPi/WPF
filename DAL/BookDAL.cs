@@ -70,7 +70,7 @@ namespace DAL
 
         public bool DeleteBookDAL(int bookId)
         {
-            MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
+            MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=;Charset=utf8");
             MySqlCommand cmd = new MySqlCommand(
                 "",
                 conn);
@@ -88,6 +88,20 @@ namespace DAL
             {
                 return false;
             }
+        }
+
+        public DataSet SearchBookDAL(string keyword)
+        {
+            MySqlConnection conn = new MySqlConnection("server=localhost;user=root;database=library_management;password=");
+            MySqlCommand cmd = new MySqlCommand(
+                "SELECT * FROM `books` WHERE `bookname` OR `bookauthor` LIKE @key",
+                conn);
+            cmd.Parameters.Add(new MySqlParameter("@key", "%" + keyword + "%"));
+
+            MySqlDataAdapter da = new MySqlDataAdapter(cmd);
+            DataSet ds = new DataSet("books_search");
+            da.Fill(ds);
+            return ds;
         }
 
         public bool IncBookCopyDAL(int bookId)

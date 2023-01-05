@@ -61,7 +61,7 @@ namespace Library_Management {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Library-Management;component/adminreturn.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Library-Management;V1.0.0.0;component/adminreturn.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AdminReturn.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

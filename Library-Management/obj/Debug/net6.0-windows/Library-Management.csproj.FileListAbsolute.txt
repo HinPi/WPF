@@ -135,3 +135,5 @@ D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\obj\Debug\net6.0-windo
 D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\obj\Debug\net6.0-windows\AdminHomeReDesign.baml
 D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\obj\Debug\net6.0-windows\UserHomeReDesign.g.cs
 D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\obj\Debug\net6.0-windows\UserHomeReDesign.baml
+D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\obj\Debug\net6.0-windows\AdminSearch.g.cs
+D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\obj\Debug\net6.0-windows\AdminSearch.baml

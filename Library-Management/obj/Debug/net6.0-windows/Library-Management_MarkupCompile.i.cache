@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Workspace\c_sharp\Project_Final\WPF\Library-Management\App.xaml
-18-1586706130
+19-510026996
 
-221150956638
+23-550578787
 206-709088322
-AdminAccepted.xaml;AdminAddBook.xaml;AdminAddUser.xaml;AdminBooks.xaml;AdminHome.xaml;AdminHomeReDesign.xaml;AdminLogin.xaml;AdminRequests.xaml;AdminReturn.xaml;AdminUpdateBook.xaml;AdminUpdateUser.xaml;AdminUsers.xaml;MainWindow.xaml;UserBorrow.xaml;UserHome.xaml;UserHomeReDesign.xaml;UserLogin.xaml;UserTransaction.xaml;
+AdminAccepted.xaml;AdminAddBook.xaml;AdminAddUser.xaml;AdminBooks.xaml;AdminHome.xaml;AdminHomeReDesign.xaml;AdminLogin.xaml;AdminRequests.xaml;AdminReturn.xaml;AdminSearch.xaml;AdminUpdateBook.xaml;AdminUpdateUser.xaml;AdminUsers.xaml;MainWindow.xaml;UserBorrow.xaml;UserHome.xaml;UserHomeReDesign.xaml;UserLogin.xaml;UserTransaction.xaml;
 
 True
 

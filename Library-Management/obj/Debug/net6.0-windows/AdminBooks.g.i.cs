@@ -72,7 +72,7 @@ namespace Library_Management {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Library-Management;component/adminbooks.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Library-Management;V1.0.0.0;component/adminbooks.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AdminBooks.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
